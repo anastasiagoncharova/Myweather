@@ -1,0 +1,107 @@
+body {
+  background-image: url("../images/cloud.jpg");
+}
+/* Navbar */
+.container-fluid {
+  padding: 0px 15px 0px 0px;
+  margin:0%;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:focus, 
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  margin:0%;
+  padding: 0%;
+}
+/* Slider */
+#myCarousel {
+  float: right;
+  width: 50%;
+}
+.carousel-inner {
+  border: 1px solid #000;
+}
+.carousel-control.right, 
+.carousel-control.left{
+  background-image: none;
+}
+.item{
+  background-image: -moz-linear-gradient(left, #E0FFFF 30%, #87CEFA 85%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.3, #E0FFFF), color-stop(0.85, #87CEFA));
+  background-color: #DDDDDD;
+  text-shadow: 1px 1px #fff;
+}
+.item p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 0%;
+  height: 40px;
+}
+/* Details */
+#details {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  margin: auto;
+}
+#details p{
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+}
+#details h1 {
+  font-family: 'Lobster';
+  font-style: italic;
+}
+/* Table */
+#table {
+  width: 50%;
+  text-align: center;
+  background-image: -moz-linear-gradient(top, #E0FFFF, #87CEFA 85%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #E0FFFF), color-stop(0.85, #87CEFA));
+  background-color: #DDDDDD;
+}
+#table img {
+  width: 50px;
+}
+#table th {
+  text-align: center;
+  height: 40px;
+}
+/* Search */
+#search {
+  background-image: url("../images/moon.jpg");
+}
+#tfnewsearch {
+  padding: 10%;
+}
+.btn-primary {
+  color: #000;
+  background-color: rgba(177, 222, 255, 0.8);
+  border-color: #0F0F0F;
+}
+.btn-primary:hover {
+  color: #FFF;
+  background-color: transparent;
+  border-color: transparent;
+}
+.tftextinput {
+  box-shadow: 1px 1px 20px #43B6FF;
+  height: 30px;
+}
+/* Footer */
+footer {
+  background-color: #000;
+  height: 40px;
+}
+#copyright {
+  margin-top: 15px;
+  color: #fff;
+}
