@@ -92,55 +92,26 @@
             </div>
             <div class="right_sidebar">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <a href="http://www.accuweather.com/en/ua/lviv/324561/weather-forecast/324561" class="aw-widget-legal">
-                </a><div id="awcc1449504120014" class="aw-widget-current"  data-locationkey="324561" data-unit="c"
-                data-language="en-us" data-useip="false" data-uid="awcc1449504120014"></div>
+            <p id="loc"></p>
+            <div id="currenttemp"></div>
             </div>
           </div>
         </div>
         <p>&nbsp;</p>
-        <div id="map">
+        <!--<div id="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.48246577139!2d23.942196030123828!3d49.
           832778677196714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvR
           jNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1448575778045" width="100%" height="600px" 
           allowfullscreen></iframe>
         </div>
-        <br />
+        <br />-->
         <div id="details" align="center">
           <h1>Friday, November 27, 2015</h1>
           <p>Light rain (total 2mm) at first, then becoming colder with a dusting of snow on Sat night. 
           Freeze-thaw conditions (max 6°C on Mon afternoon, min -2°C on Fri night). <br />Winds increasing 
           (light winds from the SSE on Sat afternoon, strong winds from the W by Mon afternoon).</p><br />
         </div>
-        <table id="table" border="1" align="center"> 
-        <tr>
-          <th>DAY</th>
-          <th>CONDITION</th>
-          <th>TEMP</th>
-          <th>DESCRIPTION</th>
-          <th>WIND</th>  
-        </tr>
-        <tr>
-          <th>Tonight</th>
-          <td><img src="images/clouds.svg" /></td>  
-          <td>-2°C</td>
-          <td>Cloudy</td>  
-          <td>10 mph</td>    
-        </tr>
-        <tr>
-          <th>Saturday</th>
-          <td><img src="images/raining.svg" /></td>  
-          <td>-3°C</td>
-          <td>Light rain</td>  
-          <td>11mph</td>    
-        </tr>
-        <tr>
-          <th>Sunday</th>
-          <td><img src="images/snow.svg" /></td>  
-          <td>-5°C</td>
-          <td>Snow</td>  
-          <td>10mph</td>    
-        </tr>
+        <table id="temp" align="center">
       </table>
     </div>
   </div>
@@ -181,8 +152,9 @@
       </div>
     </nav>
   </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+  <script src="js/weather.js"></script>
   </body>
 </html>

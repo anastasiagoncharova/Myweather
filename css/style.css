@@ -47,6 +47,20 @@ body {
   margin: 0%;
   height: 40px;
 }
+
+/* Right sidebar */
+.col-lg-4, .col-md-4, .col-sm-4, .col-xs-4{
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width:20%;
+}
+#loc, #currenttemp{
+  font-size: 30px;
+  color: #fff;
+}
+
 /* Details */
 #details {
   color: #fff;
@@ -64,19 +78,16 @@ body {
   font-style: italic;
 }
 /* Table */
-#table {
+#temp{
+  font-size: 20px;
+  color: #000;
+  border: 1px solid black;
+  margin: 0 auto;
   width: 50%;
   text-align: center;
   background-image: -moz-linear-gradient(top, #E0FFFF, #87CEFA 85%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #E0FFFF), color-stop(0.85, #87CEFA));
   background-color: #DDDDDD;
-}
-#table img {
-  width: 50px;
-}
-#table th {
-  text-align: center;
-  height: 40px;
 }
 /* Search */
 #search {
