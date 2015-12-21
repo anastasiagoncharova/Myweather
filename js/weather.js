@@ -7,7 +7,7 @@ function getWeatherData(lang, fnOK, fnError)
         // Check cache
         var input = localStorage.input && JSON.parse(localStorage.input);
         if (input === undefined) {input = 'Lviv';}
-        var cache = localStorage.weatherCache5x3 && JSON.parse(localStorage.weatherCache5x3);
+        var cache = localStorage.weatherCache && JSON.parse(localStorage.weatherCache);
         var currDate = new Date();
          //If the cache is newer than 30 minutes, use the cache
         if (cache && cache.timestamp && cache.data.city.name === input && cache.timestamp > currDate.getTime() - 30 * 60 * 1000) 
@@ -22,7 +22,7 @@ function getWeatherData(lang, fnOK, fnError)
                 function (response) 
                 {
                     // Store the cache
-                    localStorage.weatherCache5x3 = JSON.stringify(
+                    localStorage.weatherCache = JSON.stringify(
                     {
                         timestamp: (new Date()).getTime(),	// getTime() returns milliseconds
                         data: response

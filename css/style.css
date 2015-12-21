@@ -163,7 +163,7 @@ body {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 .col-lg-6, .col-md-6, .col-sm-6, .col-xs-6{
   float: right;
@@ -177,16 +177,12 @@ body {
   margin: auto;
   height: 100px;
 }
-#details p{
-  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-}
+
 #details h1 {
-  font-family: 'Lobster';
+  font-family: 'Montserrat';
   font-style: italic;
   font-size: 36px;
-    padding-top: 2%;
+  padding-top: 3%;
 }
 /* Table */
 #temp{
@@ -215,6 +211,7 @@ body {
   color: #000;
   background-color: rgba(177, 222, 255, 0.8);
   border-color: #0F0F0F;
+  border-radius: 10px;
 }
 .btn-primary:hover {
   color: #FFF;
