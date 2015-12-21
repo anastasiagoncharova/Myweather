@@ -92,7 +92,7 @@ $(function ()
     {
         var markup = '<tr>' +
             '<td>' + day + '</td>' +
-            '<td><img src="../images/icons/'+ icon +'.svg" style="width: 40px;"/></td>'+
+            '<td><img src="images/icons/'+ icon +'.svg" style="width: 40px;"/></td>'+
             '<td>' + pressure + '</td>' +
             '<td>' + speed + '</td>' +
             '<td>' + description + '</td>' +
@@ -136,59 +136,59 @@ $(function ()
 	    case "01d":
 	    case "01n":
 	    {
-	        imageUrl = "url('../images/goodweather.gif') no-repeat";
+	        imageUrl = "url(images/goodweather.gif) no-repeat";
             break;
 	    }
         case "02d":
         case "02n":
         {
-            imageUrl = "url('../images/clouds.gif') no-repeat";
+            imageUrl = "url(images/clouds.gif) no-repeat";
             break;
         }
         case "03d":
         case "03n":
         {
-            imageUrl = "url('../images/bigcloud.gif') no-repeat";
+            imageUrl = "url(images/bigcloud.gif) no-repeat";
             break;
         }
         case "04d":
         case "04n":
         {
-            imageUrl = "url('../images/brokenclouds.gif') no-repeat";
+            imageUrl = "url(images/brokenclouds.gif) no-repeat";
             break;
         }
         case "09d":
         case "09n":
         {
-            imageUrl = "url('../images/lightrain.gif') no-repeat";
+            imageUrl = "url(images/lightrain.gif) no-repeat";
             break;
         }
         case "10d":
         case "10n":
         {
-            imageUrl = "url('../images/rain.gif') no-repeat";
+            imageUrl = "url(images/rain.gif) no-repeat";
             break;
         }
         case "11d":
         case "11n":
         {
-            imageUrl = "url('../images/lightning.gif') no-repeat";
+            imageUrl = "url(images/lightning.gif) no-repeat";
             break;
         }
         case "13d":
         case "13n":
         {
-            imageUrl = "url('../images/snow.gif') no-repeat";
+            imageUrl = "url(images/snow.gif) no-repeat";
             break;
         }
         case "50d":
         case "50n":
         {
-            imageUrl = "url('../images/mist.gif') no-repeat";
+            imageUrl = "url(images/mist.gif) no-repeat";
             break;
         }
 	    default:
-	        imageUrl = "url('../images/summer.gif') no-repeat";
+	        imageUrl = "url(images/summer.gif) no-repeat";
             break;
 	    }
 

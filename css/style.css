@@ -121,7 +121,7 @@ body {
   display: inline-block;
 }
 .arrow{
-  background:url('..images/arrows.png') no-repeat;
+  background:url("../images/arrows.png") no-repeat;
   width:60px;
   height:60px;
   position:absolute;
@@ -206,7 +206,7 @@ body {
 }
 /* Search */
 #search {
-  background-image: url("images/moon.jpg");
+  background-image: url("../images/moon.jpg");
 }
 #tfnewsearch {
   padding: 10%;
