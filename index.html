@@ -3,7 +3,7 @@
   <head>
     <title>MyWeather</title>
       <meta charset="utf-8">
-      <link rel="shortcut icon" href="images/duck.png">
+      <link rel="shortcut icon" href="images/cat.png">
       <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Lobster|Nunito' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
@@ -27,7 +27,6 @@
                 <img src="images/logo.png" id="logo"/>
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#myCarousel">Home</a></li>
-                  <li class="menu1"><a href="#map">Maps</a></li>
                   <li class="menu1"><a href="#details">Details</a></li>
                   <li class="menu1"><a href="#search">Search</a></li>
                 </ul>
@@ -39,122 +38,78 @@
     </nav>
     <div class="container-fill">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-              <li data-target="#myCarousel" data-slide-to="5"></li>
-              <li data-target="#myCarousel" data-slide-to="6"></li>
-            </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <p>Monday</p>
-                  <img src="images/snow.gif" alt="Weather image">
-                </div>
-                <div class="item">
-                  <p>Tuesday</p>
-                  <img src="images/cold.gif" alt="Weather image">
-                </div>
-                <div class="item">
-                  <p>Wednesday</p>
-                  <img src="images/goodweather.gif" alt="Weather image">
-                </div>
-                <div class="item">
-                  <p>Thursday</p>
-                  <img src="images/lightning.gif" alt="Weather image">
-                </div>
-                <div class="item">
-                  <p>Friday</p>
-                  <img src="images/rain.gif" alt="Weather image">
-                </div>
-                <div class="item">
-                  <p>Saturday</p> 
-                  <img src="images/summer.gif" alt="Weather image">
-                </div>
-                <div class="item">
-                  <p>Sunday</p>
-                  <img src="images/snowing.gif" alt="Weather image">
-                </div>
-              </div>
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-            <div class="right_sidebar">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <p id="loc"></p>
-            <div id="currenttemp"></div>
-            </div>
+        <div class="right_sidebar">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <p class="location"></p>
+            <div id="clouds"></div>
           </div>
         </div>
-        <p>&nbsp;</p>
-        <!--<div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.48246577139!2d23.942196030123828!3d49.
-          832778677196714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvR
-          jNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1448575778045" width="100%" height="600px" 
-          allowfullscreen></iframe>
-        </div>
-        <br />-->
-        <div id="details" border="1" align="center">
-          <h1>Friday, November 27, 2015</h1>
-          <p>Light rain (total 2mm) at first, then becoming colder with a dusting of snow on Sat night. 
-          Freeze-thaw conditions (max 6°C on Mon afternoon, min -2°C on Fri night). <br />Winds increasing 
-          (light winds from the SSE on Sat afternoon, strong winds from the W by Mon afternoon).</p><br />
-        </div>
-        <table id="temp" border="1" align="center">
-      </table>
-    </div>
-  </div>
-  <br />
-  <div id="search" align="center">
-    <form id="tfnewsearch" method="post" action="" >
-      <input type="text" class="tftextinput" name="q" size="40" maxlength="120" placeholder="Enter your city...">
-      <input type="submit" value="search" class="btn btn-primary">
-    </form>
-  </div>
-  <footer>
-    <nav>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="navbar navbar-inverse">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#myCarousel">Home</a></li>
-                  <li class="menu1"><a href="#map">Maps</a></li>
-                  <li class="menu1"><a href="#details">Details</a></li>
-                  <li class="menu1"><a href="#search">Search</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li id="copyright">&copy; All rights reserved</li>
-                </ul>
-              </div>
-            </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div id="weather">
+            <ul id="scroller">
+            <!-- The forecast items will go here -->
+            </ul>
+            <a href="#" class="arrow previous"></a>
+            <a href="#" class="arrow next"></a>
           </div>
         </div>
       </div>
-    </nav>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-  <script src="js/weather.js"></script>
+      <p>&nbsp;</p>
+      <div id="details" border="1" align="center">
+        <h1 id="optionLabel">Click here to see details...</h1>
+      </div>
+      <table id="temp" border="1" align="center" style="display: none">
+        <tr>
+          <td>Day</td>
+          <td>Image</td>
+          <td>Pressure</td>
+          <td>Wind Speed</td>
+          <td>Description</td>
+          <td>Temperature</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div id="search" align="center">
+      <form id="tfnewsearch" method="post" action="">
+        <input type="text" class="tftextinput" id="inputCityName" name="q" size="40" 
+            maxlength="120" placeholder="Enter your city...">
+        <input type="submit" value="search" class="btn btn-primary" id="btnGetWeather">
+      </form>
+    </div>
+    <footer>
+      <nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="navbar navbar-inverse">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#myCarousel">Home</a></li>
+                    <li class="menu1"><a href="#details">Details</a></li>
+                    <li class="menu1"><a href="#search">Search</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li id="copyright">&copy; All rights reserved</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
