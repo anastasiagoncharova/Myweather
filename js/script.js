@@ -32,6 +32,7 @@ $(function ()
         var temperature = Math.round(data.list[0].temp.day);
 
         $("#temp tr:not(:first)").remove();
+        $('#scroller li').remove();
 
         $.each(data.list, function () 
         {
