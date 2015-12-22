@@ -21,7 +21,6 @@ $(function ()
         }
     });
     getWeatherData(locale, dataReceived, showError);
-    var icons = new Array();
 
     function dataReceived(data) 
     {
@@ -41,8 +40,6 @@ $(function ()
             var timeIndex = moment(localTime).calendar().length-10;
             var timeMoment = moment(localTime).calendar().substring(0,timeIndex);
             var description = this.weather[0].description;
-            var iconName = this.weather[0].icon + '.png';
-            icons.push(iconName);
             addWeather(
                 timeMoment, // We are using the moment.js library to format the date
                 description,
