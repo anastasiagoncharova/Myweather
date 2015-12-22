@@ -46,7 +46,6 @@ $(function ()
             addWeather(
                 timeMoment, // We are using the moment.js library to format the date
                 description,
-                parseInt(this.temp.day),
                 this.weather[0].icon
             );
             addWeatherTable
@@ -81,12 +80,11 @@ $(function ()
     }
     $('#details').on('click', showDetails);
     
-    function addWeather(day, condition, temperature, icon) 
+    function addWeather(day, condition, icon) 
     {
 	    var markup = '<li>' +'<span id="'+icon+'" style="display:none"></span>'+
 	        ' <p class="day">' + day + '</p> <p class="cond">' + condition +
-	        '</p></br></br><p class="cond">' + temperature +
-	        '°C</p>' + '</li>';
+	        '</p></li>';
 		scroller.append(markup);
     }
     function addWeatherTable(day, icon, pressure, speed, description, tempp) 
